@@ -1,0 +1,26 @@
+version: '2'
+services:
+  vault:
+    image: vault
+    container_name: vault
+    ports:
+      - 8200:8200
+    tty: true
+    restart: always
+    volumes:
+      - /Users/pmartens/Projects/Docker/vault/data:/vault/file:rw
+      - /Users/pmartens/Projects/Docker/vault/logs:/vault/logs:rw
+      - /Users/pmartens/Projects/Docker/vault/:/vault/config:rw
+    cap_add:
+      - IPC_LOCK
+    command: server
+
+  vault-ui:
+    image: djenriquez/vault-ui
+    container_name: vault-ui
+    ports:
+     - 8000:8000
+    tty: true
+    restart: always
+    environment:
+      NODE_TLS_REJECT_UNAUTHORIZED: 0
