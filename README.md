@@ -1,13 +1,15 @@
 # Vault
 
-
 ## Installation
-
 - Install vault with brew (Mac OS):<br>
 `brew install vault`
 - Set environment settings in Bash to talk to Vault Docker container.<br>
 `export VAULT_ADDR='http://127.0.0.1:8200'`<br>
 `export VAULT_AUTH_METHOD=token`<br>
+- Make data folder in vault folder.<br>
+`mkdir data`
+- Make log folder<br>
+`mkdir logs`
 
 ### Initializing Vault server
 - For initializing the Vault server, execute the following command:<br>
