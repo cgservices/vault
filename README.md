@@ -21,6 +21,7 @@
 - Set token environment setting in Bash.<br> 
 `export VAULT_TOKEN='<token>`<br>
 `export VAULT_AUTH_TOKEN='<token>'`<br>
+You can also add these settings to your own _~/.bashrc_ or _~/.zshrc_.
 - Authenticate to Vault.<br>
 `vault auth <token>`
 - Add Vault policies with the following commands:<br>
