@@ -15,6 +15,16 @@
 - Make log folder<br>
 `mkdir logs`
 
+### Start Docker Vault
+- Navigate to your vault application folder.
+- Starting Docker Vault:
+`docker-compose up -d`
+
+### Stop Docker Vault
+- Navigate to your vault application folder.
+- Stop Docker Vault:
+`docker-compose stop`
+
 ### Initializing Vault server
 - For initializing the Vault server, execute the following command:<br>
 `vault init`
@@ -58,3 +68,13 @@ Here is an example to write and reading to your Vault.
 `vault write secret/omnia/test value=yes`
 - Reading from Vault.<br>
 `vault read secret/omnia/test`
+
+## FAQ
+
+##### How to run docker-compose for Vault at bootup
+- Open your terminal
+- Open your crontab
+`crontab -e`
+- Add the following line with your favorite editor:<br>
+EXAMPLE:<br>
+`@reboot docker-compose /Users/pmartens/Projects/Docker/vault/docker-compose.yml up -d`
