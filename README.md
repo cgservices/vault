@@ -5,7 +5,6 @@ See HowVaultWorks.key
 
 ## Installation Requirements
 - Docker: https://docs.docker.com/docker-for-mac/
-- Docker Compose: https://docs.docker.com/compose/install/
 
 ## Installation
 - Install vault with brew (Mac OS):<br>
