@@ -2,10 +2,8 @@
 
 ## Presenstation
 See HowVaultWorks.key
-
 ## Installation Requirements
 - Docker: https://docs.docker.com/docker-for-mac/
-
 ## Installation
 - Install vault with brew (Mac OS):<br>
 `brew install vault`
@@ -89,3 +87,9 @@ EXAMPLE:<br>
 ##### Rails gem for Vault integration in rails applications
  Gem for Vault integration in rails applications:
  https://github.com/infinum/secrets_cli
+
+## Documentation
+
+Vault: https://www.vaultproject.io/docs/index.html<br>
+Vault Ruby: https://github.com/hashicorp/vault-ruby
+Command-Line-Interface for easier use of Vault: https://github.com/infinum/secrets_cli
