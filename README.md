@@ -74,6 +74,11 @@ Here is an example to write and reading to your Vault.
 - Reading from Vault.<br>
 `vault read secret/omnia/test`
 
+## Vault UI
+The Vault UI is located at the following address:<br>
+`http://localhost:8000/login`
+
+
 ## FAQ
 
 ##### How to run docker-compose for Vault at bootup
